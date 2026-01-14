@@ -1,98 +1,290 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>隐私政策 | EatSnap AI</title>
-  <meta name="color-scheme" content="light">
-  <style>
-    :root { --fg:#111; --bg:#fff; --muted:#555; --link:#1E90FF; }
-    html,body{ margin:0; padding:0; background:var(--bg); color:var(--fg); font:16px/1.6 -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; }
-    .container{ max-width:760px; margin:0 auto; padding:20px 16px 40px; }
-    h1{ font-size:22px; margin:12px 0 8px; }
-    h2{ font-size:18px; margin:24px 0 10px; }
-    p{ margin:10px 0; color:var(--fg); }
-    ul{ margin:10px 0 10px 18px; padding:0; }
-    li{ margin:6px 0; }
-    .muted{ color:var(--muted); }
-    a{ color:var(--link); text-decoration:underline; }
-    .header{ margin-top:4px; margin-bottom:18px; }
-    .footer{ margin-top:28px; font-size:13px; color:var(--muted); }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | EatSnap AI</title>
+    <style>
+        /* 基础重置与字体设置 */
+        :root {
+            --text-color: #333;
+            --bg-color: #fff;
+            --link-color: #007AFF;
+            --divider-color: #eee;
+            --spacing-unit: 16px;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* 布局容器 */
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* 顶部导航 */
+        .lang-nav {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--divider-color);
+            font-size: 16px;
+            font-weight: 500;
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            padding-top: 20px;
+            backdrop-filter: blur(10px);
+            z-index: 100;
+        }
+
+        .lang-nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 5px 10px;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+
+        .lang-nav a:hover {
+            background-color: #f5f5f7;
+            color: var(--link-color);
+        }
+
+        /* 标题样式 */
+        h1 {
+            font-size: 28px;
+            margin-top: 0;
+            margin-bottom: 16px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #f0f0f0;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 17px;
+            margin-top: 24px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        /* 文本与列表 */
+        p {
+            margin-bottom: 16px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 分割线 */
+        .section-divider {
+            border: 0;
+            height: 1px;
+            background: var(--divider-color);
+            margin: 60px 0;
+        }
+
+        /* 元数据（日期等） */
+        .meta-info {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 480px) {
+            h1 { font-size: 24px; }
+            h2 { font-size: 19px; }
+            .container { padding: 20px 16px; }
+        }
+    </style>
 </head>
 <body>
-  <main class="container" role="main">
-    <header class="header">
-      <h1>EatSnap 隐私政策</h1>
-      <p class="muted">生效日期：2025年11月21日</p>
-      <p class="muted">最后更新：2025年11月22日</p>
-      <p class="muted">联系人：Wesley Wu（<a href="mailto:eatsnap.ai@gmail.com">eatsnap.ai@gmail.com</a>）</p>
-    </header>
 
-    <section>
-      <h2>一、我们收集哪些信息</h2>
-      <ul>
-        <li>用户主动提供的信息</li>
-        <li>基本信息：邮箱、昵称（如有账户）</li>
-        <li>身体数据：性别、年龄、身高、体重、目标体重、活动等级</li>
-        <li>饮食记录：食物照片、文本，以及记录的热量、蛋白质、碳水等营养数据</li>
-        <li>自动收集的信息</li>
-        <li>设备信息：设备型号、操作系统版本等</li>
-        <li>使用数据：App内的页面浏览、操作记录等匿名行为数据，仅用于产品改进</li>
-      </ul>
-    </section>
+<div class="container">
+    <!-- 顶部快速导航 -->
+    <nav class="lang-nav">
+        <a href="#zh">[中文版]</a>
+        <span>|</span>
+        <a href="#en">[English Version]</a>
+    </nav>
 
-    <section>
-      <h2>二、我们如何使用这些信息</h2>
-      <ul>
-        <li>实现App核心功能，如计算每日建议摄入量、智能识别食物、生成统计和趋势</li>
-        <li>性能优化与问题修复，为你提供更稳定、好用的体验</li>
-        <li>必要时用于与用户沟通产品通知、功能升级等信息</li>
-      </ul>
-    </section>
+    <!-- 中文版内容 -->
+    <div id="zh" class="policy-section">
+        <h1>隐私政策</h1>
+        <div class="meta-info">
+            <p><strong>生效日期</strong>：2026年1月12日<br>
+            <strong>最近更新</strong>：2026年1月12日</p>
+        </div>
 
-    <section>
-      <h2>三、我们与谁共享信息</h2>
-      <ul>
-        <li>我们绝不出售、出租你的个人信息</li>
-        <li>AI 识别服务：为实现“智能识别”功能，您上传的食物照片或文本会被临时加密传输至阿里云百炼等第三方 AI 服务商进行分析。分析完成后，数据即刻返回，我们不会授权第三方将您的照片用于训练其通用模型。</li>
-        <li>iCloud 同步：如果您开启了 iCloud 同步功能，您的数据将通过 Apple 的 iCloud 服务在您的设备间同步。这些数据受 Apple 隐私政策保护。</li>
-        <li>除非法律要求或保护用户权益，否则不会分享给其他第三方</li>
-      </ul>
-    </section>
+        <p>欢迎使用 EatSnap AI。本隐私政策旨在向您说明 <strong>Wenlong Wu</strong>（以下简称“我们”）如何在您使用我们的移动应用程序时收集、使用和保护您的信息。使用本应用即表示您同意本政策所述的行为。</p>
 
-    <section>
-      <h2>四、我们如何保护你的信息安全</h2>
-      <ul>
-        <li>所有数据均采用加密传输（HTTPS）</li>
-        <li>仅授权人员可以访问必要的维护数据</li>
-        <li>我们持续审查安全措施以防止数据泄露或滥用</li>
-      </ul>
-    </section>
+        <h2>一、 我们收集的信息</h2>
 
-    <section>
-      <h2>五、你的权利</h2>
-      <ul>
-        <li>您有权在 App 内访问、修改或删除自己的所有数据</li>
-        <li>删除 App 或清空数据后，本地存储的照片将被永久移除</li>
-        <li>如有其他请求，可发送邮件至 <a href="mailto:eatsnap.ai@gmail.com">eatsnap.ai@gmail.com</a> 联系我们处理</li>
-      </ul>
-    </section>
+        <h3>1. 您主动提供的信息</h3>
+        <ul>
+            <li><strong>身体数据</strong>：为提供个性化的营养计算，我们会收集您的性别、年龄、身高、体重、目标体重和活动等级。</li>
+            <li><strong>饮食记录</strong>：我们会收集您上传的食物照片、文本描述，以及由 AI 生成的相应营养数据（热量、三大营养素等）。</li>
+            <li><strong>账户信息</strong>：如适用，我们可能会收集您的电子邮箱和昵称用于数据同步。</li>
+        </ul>
 
-    <section>
-      <h2>六、儿童隐私</h2>
-      <p>EatSnap不面向13岁以下儿童，不主动收集未成年人个人信息。一旦发现，将予以删除处理。</p>
-    </section>
+        <h3>2. 自动收集的信息</h3>
+        <ul>
+            <li><strong>设备信息</strong>：我们会收集技术数据，如设备型号、操作系统版本和唯一设备标识符，以确保应用的稳定性。</li>
+            <li><strong>使用数据</strong>：我们会收集有关您如何与应用互动的匿名数据（如功能使用情况、页面浏览路径），用于改进我们的服务。</li>
+        </ul>
 
-    <section>
-      <h2>七、政策变更与联系我们</h2>
-      <ul>
-        <li>如本政策有重要变更，我们会在App内公告并及时更新文档</li>
-        <li>对隐私政策有任何疑问，请联系：<a href="mailto:eatsnap.ai@gmail.com">eatsnap.ai@gmail.com</a></li>
-      </ul>
-    </section>
+        <h2>二、 我们如何使用信息</h2>
+        <ul>
+            <li>根据您的身体数据计算每日建议的营养摄入量。</li>
+            <li>提供 AI 驱动的食物识别和营养分析。</li>
+            <li>生成历史统计数据和健康趋势图表。</li>
+            <li>优化应用性能并修复技术问题。</li>
+        </ul>
 
-    <footer class="footer">© 2025 EatSnap AI. 版权所有</footer>
-  </main>
+        <h2>三、 信息共享与第三方服务</h2>
+        <p>我们非常重视您的隐私：<strong>我们绝不出售或出租您的个人数据给第三方</strong>。</p>
+        <ul>
+            <li><strong>AI 识别处理</strong>：为实现“智能识别”功能，您的食物照片或文本会被加密传输至第三方 AI 服务商（如阿里云百炼）。我们未授权这些服务商将您的数据用于训练其通用模型。</li>
+            <li><strong>iCloud 同步</strong>：如果开启，您的数据将通过 Apple 的 iCloud 服务在您的个人设备间同步。这些数据受 Apple 隐私政策的保护。</li>
+            <li><strong>法律合规</strong>：如法律要求或应公共权力机构的合法要求，我们可能会披露您的信息。</li>
+        </ul>
+
+        <h2>四、 数据安全与存储</h2>
+        <ul>
+            <li>所有数据传输均采用行业标准的 HTTPS 加密。</li>
+            <li>您的饮食记录和身体数据存储在您的设备本地，以及您个人的 iCloud 存储中（如开启）。</li>
+            <li>我们仅在提供服务所必需的时间内保留您的信息，或直到您要求删除。</li>
+        </ul>
+
+        <h2>五、 您的权利与选择</h2>
+        <p>您对自己的数据拥有完全控制权：</p>
+        <ul>
+            <li><strong>访问与编辑</strong>：您可以在应用设置中查看并修改您的身体数据和记录。</li>
+            <li><strong>删除</strong>：您可以在应用内直接删除您的所有数据。一旦删除，本地记录和照片将被永久移除。</li>
+            <li><strong>权限管理</strong>：您可以随时通过 iOS 系统设置管理或撤销相机及照片库的访问权限。</li>
+        </ul>
+
+        <h2>六、 非医疗免责声明</h2>
+        <p>EatSnap AI 仅作为营养记录和信息参考工具。它不是医疗设备，不提供专业的医疗建议、诊断或治疗。 在开始新的饮食或营养计划之前，请务必咨询专业医疗人员。</p>
+
+        <h2>七、 儿童隐私</h2>
+        <p>EatSnap AI 不面向 13 岁以下的儿童。我们不会故意收集 13 岁以下儿童的个人信息。</p>
+
+        <h2>八、 联系我们</h2>
+        <p>如果您对本隐私政策或您的数据有任何疑问，请联系：<strong>Wenlong Wu</strong></p>
+        <p>邮箱：<a href="mailto:eatsnap.ai@gmail.com">eatsnap.ai@gmail.com</a></p>
+    </div>
+
+    <!-- 分割线 -->
+    <hr class="section-divider">
+
+    <!-- 英文版内容 -->
+    <div id="en" class="policy-section">
+        <h1>Privacy Policy</h1>
+        <div class="meta-info">
+            <p><strong>Effective Date:</strong> January 12, 2026<br>
+            <strong>Last Updated:</strong> January 12, 2026</p>
+        </div>
+
+        <p>Welcome to EatSnap AI. This Privacy Policy explains how Wenlong Wu ("we," "us," or "our") collects, uses, and protects your information when you use our mobile application. By using EatSnap AI, you agree to the practices described in this policy.</p>
+
+        <h2>1. Information We Collect</h2>
+
+        <h3>A. Information You Provide Directly</h3>
+        <ul>
+            <li><strong>Body Metrics:</strong> To provide personalized nutritional calculations, we collect data such as gender, age, height, weight, target weight, and activity level.</li>
+            <li><strong>Dietary Records:</strong> We collect food photos, text descriptions, and the resulting nutritional data (calories, macronutrients) generated by the AI.</li>
+            <li><strong>Account Information:</strong> If applicable, we may collect your email address and nickname for account synchronization.</li>
+        </ul>
+
+        <h3>B. Information Collected Automatically</h3>
+        <ul>
+            <li><strong>Device Information:</strong> We collect technical data such as your device model, operating system version, and unique device identifiers to ensure app stability.</li>
+            <li><strong>Usage Data:</strong> We collect anonymous data regarding how you interact with the app (e.g., feature usage, navigation paths) to improve our service.</li>
+        </ul>
+
+        <h2>2. How We Use Your Information</h2>
+        <ul>
+            <li>To calculate your daily suggested nutritional intake based on your body metrics.</li>
+            <li>To provide AI-powered food recognition and nutritional analysis.</li>
+            <li>To generate historical statistics and health trends.</li>
+            <li>To optimize App performance and fix technical bugs.</li>
+        </ul>
+
+        <h2>3. Data Sharing and Third Parties</h2>
+        <p>We value your privacy: <strong>We never sell or rent your personal data to third parties.</strong></p>
+        <ul>
+            <li><strong>AI Processing:</strong> To provide the "Smart Recognition" feature, your food photos or text inputs are encrypted and transmitted to third-party AI service providers (e.g., Alibaba Cloud Model Studio). We do not authorize these providers to use your data for training their general models.</li>
+            <li><strong>iCloud Synchronization:</strong> If enabled, your data is synced across your personal devices via Apple’s iCloud service. This data is subject to Apple’s Privacy Policy.</li>
+            <li><strong>Legal Compliance:</strong> We may disclose your information if required by law or in response to valid requests by public authorities.</li>
+        </ul>
+
+        <h2>4. Data Security and Retention</h2>
+        <ul>
+            <li>We use industry-standard HTTPS encryption for all data transmissions.</li>
+            <li>Your dietary records and body metrics are stored locally on your device and, if enabled, in your private iCloud storage.</li>
+            <li>We retain your information as long as necessary to provide the services or until you request its deletion.</li>
+        </ul>
+
+        <h2>5. Your Rights and Choices</h2>
+        <p>You have full control over your data:</p>
+        <ul>
+            <li><strong>Access and Edit:</strong> You can view and modify your body metrics and records within the App settings.</li>
+            <li><strong>Deletion:</strong> You can delete all your data directly within the App. Once deleted, local records and photos are permanently removed.</li>
+            <li><strong>Permissions:</strong> You can manage or revoke camera and photo library permissions at any time through your iOS system settings.</li>
+        </ul>
+
+        <h2>6. Non-Medical Disclaimer</h2>
+        <p>EatSnap AI is a tool for nutritional tracking and informational purposes only. It is not a medical device and does not provide professional medical advice, diagnosis, or treatment. Always consult with a healthcare professional before starting a new diet or nutrition plan.</p>
+
+        <h2>7. Children’s Privacy</h2>
+        <p>EatSnap AI is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
+
+        <h2>8. Contact Us</h2>
+        <p>For any questions regarding this Privacy Policy or your data, please contact:</p>
+        <p><strong>Wenlong Wu</strong><br>
+        Email: <a href="mailto:eatsnap.ai@gmail.com">eatsnap.ai@gmail.com</a></p>
+    </div>
+</div>
+
 </body>
 </html>
